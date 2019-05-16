@@ -22,7 +22,7 @@ vector<Interval> Solution::insert(vector<Interval> &intervals, Interval newInter
    int f=0;
    while(i<intervals.size())
    {
-       if(newInterval.end>=intervals[i].start && newInterval.end<intervals[i].end)
+       if(newInterval.end>=intervals[i].start && newInterval.end<=intervals[i].end)
        {
            s.end=intervals[i].end;
            i++;
